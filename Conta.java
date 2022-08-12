@@ -32,13 +32,12 @@ public class Conta {
     }
   }
 
-  //método retirar
   
   public void depositar(double valor) {
     saldo = saldo + valor;
   }
 
-  public void transfer(double valor, Conta destino) {
+  public void transferir(double valor, Conta destino) {
     if (saldo>=valor) {
       saldo = saldo - valor;
 
@@ -47,6 +46,16 @@ public class Conta {
   }
 
   public static void main(String args[]) {
-    Conta account1 = new Conta();
+    Conta c1 = new Conta();
+    Conta c2 = new Conta();
+
+    c1.setNumero(31);
+    c2.setNumero(38);
+    c1.depositar(500);
+    c1.transferir(200, c2);
+
+    System.out.printf("Saldo da conta %d: %.2f\n", c1.numero, c1.saldo);
+    System.out.printf("Saldo da conta %d: %.2f\n", c2.numero, c2.saldo);
+  
   }
 }
