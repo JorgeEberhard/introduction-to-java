@@ -105,4 +105,5 @@ public static void main(String args[]){
 2. What is the output of execution of the class?  
 - Answer: The output of the execution of the class is the amount of money in each account (31, 38) being 400(31) and 300(38).  
 
-3. Knowing that the class "Conta" wont have a proposed main method, create a class "App", in which should stay only with the "main" method. Make the rigth ajustments to the output still be the same.  
+3. Knowing that the class "Conta" wont have a proposed main method, create a class "App", in which should stay only with the "main" method. Make the rigth ajustments to the output still be the same.
+- Answer: Changes have been made and the output still the same.
